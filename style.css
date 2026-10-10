@@ -112,3 +112,80 @@ footer {
         padding: 22px;
     }
 }
+/* Personal introduction */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-label {
+    color: #2677bb;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.intro-text h2 {
+    font-size: 2.2rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.intro-text h3 {
+    color: #1d4775;
+}
+
+.profile-photo {
+    flex: 0 0 230px;
+}
+
+.photo-placeholder {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7eef7;
+    border: 2px dashed #8ba9c9;
+    border-radius: 14px;
+    color: #1d4775;
+    font-weight: bold;
+}
+
+.intro-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 22px;
+    background-color: #173c68;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.intro-button:hover {
+    background-color: #2677bb;
+}
+
+@media (max-width: 600px) {
+    .intro-container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .profile-photo {
+        flex-basis: auto;
+        width: 100%;
+        max-width: 230px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
