@@ -1,0 +1,114 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #243247;
+    background-color: #f4f7fb;
+}
+
+/* Main introduction */
+header {
+    background: linear-gradient(135deg, #101d35, #1d4775);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+header p {
+    color: #d5e5f7;
+    font-size: 1.1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    color: #1d4775;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 16px;
+}
+
+nav a:hover {
+    color: #1684d6;
+}
+
+/* Content sections */
+section {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(20, 40, 70, 0.06);
+}
+
+section h2 {
+    color: #173c68;
+    margin-top: 0;
+    border-bottom: 2px solid #d9e8f8;
+    padding-bottom: 10px;
+}
+
+/* Individual projects */
+article {
+    padding: 18px;
+    margin: 20px 0;
+    background-color: #f4f7fb;
+    border-left: 4px solid #2677bb;
+    border-radius: 6px;
+}
+
+article h3 {
+    color: #173c68;
+    margin-top: 0;
+}
+
+/* Bottom of the page */
+footer {
+    background-color: #101d35;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+    margin-top: 45px;
+}
+
+/* Smaller screens, including phones */
+@media (max-width: 600px) {
+    header {
+        padding: 50px 16px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+}
